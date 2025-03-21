@@ -223,7 +223,7 @@ a :hover {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 160px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0);
   color: #fff;
   text-align: center;
   border-radius: 6px;
