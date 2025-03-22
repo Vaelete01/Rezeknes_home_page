@@ -28,57 +28,13 @@ h2 {
   width: 100%;
   user-select: none;
   text-shadow: 3px 3px black;
-}
-
-/*nav-bar */
-#nav-bar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: rgb(80, 78, 77);
   margin-bottom: 10px;
-}
-
-#nav-bar ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  overflow: hidden;
-  justify-content: center;
-  background-color: rgb(182, 182, 182);
-  user-select: none;
-}
-
-#nav-bar ul li {
-  margin: 0 10px;
-  padding-right: 10px;
-  border-right: solid 1px rgb(48, 48, 48);
-}
-
-#nav-bar ul li:last-child {
-  border-right: none;
-}
-
-#nav-bar ul li a {
-  color: rgb(237, 237, 237);
-  text-decoration: none;
-  font-size: 20px;
-  padding: 15px 20px;
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  text-align: center;
-  transition: box-shadow 0.3s ease,
-    background-color 0.3s ease;
 }
 
 a {
   color: rgb(92, 20, 20);
 }
 
-a:hover {
-  text-decoration: underline;
-}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
