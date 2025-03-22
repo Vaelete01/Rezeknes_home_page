@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background-image: url(https://maltasdzksu.lv/images/slides/karte2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+}
+
+h2 {
+  background-color: rgb(92, 20, 20);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  user-select: none;
+  text-shadow: 3px 3px black;
+}
+
+/*nav-bar */
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(80, 78, 77);
+  margin-bottom: 10px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgb(182, 182, 182);
+  user-select: none;
+}
+
+#nav-bar ul li {
+  margin: 0 10px;
+  padding-right: 10px;
+  border-right: solid 1px rgb(48, 48, 48);
+}
+
+#nav-bar ul li:last-child {
+  border-right: none;
+}
+
+#nav-bar ul li a {
+  color: rgb(237, 237, 237);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 20px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+a {
+  color: rgb(92, 20, 20);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 20px;
+  border: 0.5px solid rgba(169, 169, 169, 0.414);
+  border-radius: 5px;
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 16px;
+  color: #666;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 45px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-text {
+  text-indent: 20px;
+  margin-bottom: 15px;
+}
+
+#footer {
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 86%;
+  padding: 5px 40px;
+  margin-bottom: 15px;
+}
+
+.col {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.info {
+  color: rgb(93, 93, 93);;
+}
+
+/* Sadarbības partneri*/
+.partneri {
+  margin-top: 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  width: 93%;
+}
+
+#sadarb {
+  display: block !important;
+  background-color: rgb(92, 20, 20);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  user-select: none;
+  border-radius: 5px;
+  text-shadow: 3px 3px black;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Логотипы (увеличенный размер) */
+.logo {
+  height: 55px;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+/* Делаем логотипы изначально в две строки */
+@media (min-width: 769px) {
+
+  /* Для больших экранов */
+  .logo {
+    flex: 1 1 calc(100% / 7 - 15px);
+    /* 7 логотипов в строке */
+  }
+}
+
+/* Для планшетов - 4 логотипа в строке */
+@media (max-width: 1024px) {
+  .logo {
+    flex: 1 1 calc(100% / 4 - 15px);
+    /* 4 логотипа в строке */
+    height: 70px;
+    max-width: 160px;
+  }
+}
+
+/* Для телефонов - 3 логотипа в строке */
+@media (max-width: 768px) {
+  .logo {
+    flex: 1 1 calc(100% / 3 - 15px);
+    /* 3 логотипа в строке */
+    height: 60px;
+    max-width: 140px;
+  }
+}
+
+/* Тултип */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Скрываем текст тултипа */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+
+  /* Размещение над логотипом */
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.4 ease-in-out;
+}
+
+/* Показываем тултип при на*/
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+ul{
+ list-style: none;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: 0.3s;
+  }
+  
+  .pagination a:hover {
+    background: #f1f1f1;
+  }
+  
+  .pagination a.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination a.disabled {
+    pointer-events: none;
+    color: grey;
+    border-color: grey;
+    background: #f8f8f8;
+  }
+  
